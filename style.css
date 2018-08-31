@@ -41,16 +41,16 @@ a {
 .top-nav a:visited {
     text-decoration: none;
     color: #fff;
-    font-weight: 100;
+    font-weight: 300;
     font-size: 75%;
-    border-bottom: 1px solid #fa6ade;
+    border-bottom: 1px solid rgb(230, 0 , 23);  /* rgb(230, 0 , 23) */
     padding-bottom: 4px;
     transition: border-bottom 0.2s;
 }
 
 .top-nav a:hover,
 .top-nav a:active {
-    border-bottom: 3px solid #fa6ade;
+    border-bottom: 3px solid rgb(230, 0 , 23);
 }
 
 
@@ -80,7 +80,7 @@ h2 {
     color: #696969;
     font-size: 500%;
     line-height: 100px;
-    border-bottom: 10px solid #fa6ade;
+    border-bottom: 10px solid rgb(230, 0 , 23);
     width: 150px;
     line-height: 125px;
     text-transform: uppercase;
@@ -99,7 +99,7 @@ h3:after {
     display: block;
     margin: 0 auto;
     width: 5%;
-    border-bottom: 10px solid #fa6ade;
+    border-bottom: 10px solid rgb(230, 0 , 23);
 }
 
 h4 {
@@ -124,25 +124,24 @@ h5 {
     font-weight: 400;
     font-size: 120%;
     border-radius: 50px;
-    transition: box-shadow 2s, background-color 1s, border 0.2s, color 0.2s;
+    transition: box-shadow 2s, background-color 1s, color 0.2s;
 }
 
 
 .btn-full:link,
 .btn-full:visited {
     color: #fff;
-    border: 2px solid #fa6ade;
-    background-color: #fa6ade;
+    border: 2px solid #ededed;
+    background-color: rgb(230, 0 , 23);
     padding: 10px 30px;
-    box-shadow: 0px 5px 10px 10px rgba(250,106,222,0.5);
+    box-shadow: 1px 1px 3px 3px rgba(230,0,23,0.7);
 }
 
 
 .btn-full:hover,
 .btn-full:active {
-    background-color: rgb(92, 32, 193);
-    border-color: #fff; 
-    box-shadow: 0px 5px 10px 10px rgb(92, 32, 193);
+    background-color: rgb(255, 50, 50);
+    box-shadow: 1px 1px 3px 3px rgb(255, 50, 50);
 }
 
 .btn-ghost:link,
@@ -165,26 +164,35 @@ h5 {
 
 header {
     height: 100vh;
-    background-color: rgb(92, 32, 193);
+    background-image: linear-gradient(to right, rgb(153, 217, 234) 30%, #29acff);
     position: relative;
     text-transform: uppercase;
 }
 
 .logo {
-    height: 100px;
+    height: 120px;
     width: auto;
     margin-top: 20px;
 }
 
 .top-nav {
-    margin-top: 60px;
+    margin-top: 70px;
     float: right;
 }
 
 .top-nav li {
     list-style: none;
     display: inline-block;
-    margin-right: 100px;
+    margin-right: 72px;
+}
+
+.emotion {
+    margin-top: 205px;
+}
+
+.emopic {
+    width: 520px;
+    height: 360px;
 }
 
 .Text-box-1 {
@@ -203,6 +211,10 @@ header {
 .what-we-do-ul li {
     padding: 20px;
     margin-bottom: 40px;
+}
+
+.what-we-do-ul li:last-child {
+    margin-bottom: 0px;
 }
 
 .what-we-do p {
@@ -268,7 +280,7 @@ header {
 /*FOOTER*/
 
 footer {
-    background-color: rgb(92, 32, 193);
+    background-image: linear-gradient(to right, rgb(153, 217, 234) 30%, #29acff);
     padding: 70px 20px 20px 20px;
 }
 
