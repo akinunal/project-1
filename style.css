@@ -229,15 +229,15 @@ header {
 }
 
 .latest-work-image {
-    float: inherit;
+    float: left;
     overflow: visible;
-    width: 900px;
-    height: 499px;
-    margin-bottom: 100px;
+    width: 700px;
+    height: 500px;
+    margin-bottom: 80px;
 }
 
-.section-latest-work a {
-    float: right;
+.boxy {
+    text-align: center;
 }
 
 /*OUR DAILY ROUTINE*/
