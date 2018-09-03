@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -45,6 +46,7 @@ a {
     font-size: 75%;
     border-bottom: 1px solid rgb(230, 0 , 23);  /* rgb(230, 0 , 23) */
     padding-bottom: 4px;
+    -webkit-transition: border-bottom 0.2s;
     transition: border-bottom 0.2s;
 }
 
@@ -63,7 +65,7 @@ a {
 }
 
 .social-links i {
-    font-size: 300%;
+    font-size: 250%;
     color: #9d9d9d;
 }
 
@@ -124,24 +126,29 @@ h5 {
     font-weight: 400;
     font-size: 120%;
     border-radius: 50px;
-    transition: box-shadow 2s, background-color 1s, color 0.2s;
+    text-transform: uppercase;
+    -webkit-transition: background-color 0.8s, color 0.8s, -webkit-box-shadow 0.8s;
+    transition: background-color 0.8s, color 0.8s, -webkit-box-shadow 0.8s;
+    transition: box-shadow 0.8s, background-color 0.8s, color 0.8s;
+    transition: box-shadow 0.8s, background-color 0.8s, color 0.8s, -webkit-box-shadow 0.8s;
 }
 
 
 .btn-full:link,
 .btn-full:visited {
     color: #fff;
-    border: 2px solid #ededed;
     background-color: rgb(230, 0 , 23);
     padding: 10px 30px;
-    box-shadow: 1px 1px 3px 3px rgba(230,0,23,0.7);
+    -webkit-box-shadow: 0 0 2px 1px rgb(230, 0 , 23);
+    box-shadow: 0 0 2px 1px rgb(230, 0 , 23);
 }
 
 
 .btn-full:hover,
 .btn-full:active {
-    background-color: rgb(255, 50, 50);
-    box-shadow: 1px 1px 3px 3px rgb(255, 50, 50);
+    background-color: rgba(0, 174, 252, 0.7);
+    -webkit-box-shadow: 0 0 2px 1px rgba(0, 174, 252, 0.7);
+    box-shadow: 0 0 2px 1px rgba(0, 174, 252, 0.7);
 }
 
 .btn-ghost:link,
@@ -150,6 +157,8 @@ h5 {
     border: 2px solid #f7993b;
     background-color: #efefef;
     padding: 10px 30px;
+    -webkit-transition: background-color 0.5s, color 0.5s;
+    transition: background-color 0.5s, color 0.5s
 }
 
 
@@ -164,6 +173,7 @@ h5 {
 
 header {
     height: 100vh;
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(30%, rgb(153, 217, 234)), to(#29acff));
     background-image: linear-gradient(to right, rgb(153, 217, 234) 30%, #29acff);
     position: relative;
     text-transform: uppercase;
@@ -183,7 +193,7 @@ header {
 .top-nav li {
     list-style: none;
     display: inline-block;
-    margin-right: 72px;
+    margin-right: 70px;
 }
 
 .emotion {
@@ -217,7 +227,7 @@ header {
     margin-bottom: 0px;
 }
 
-.what-we-do p {
+.what-we-do-ul p {
     font-size: 75%;
     font-weight: 300;
 }
@@ -264,28 +274,33 @@ header {
 .pictures {
     width: 100%;
     margin: 0;
+    -webkit-transform: scale(1.03);
     transform: scale(1.03)
 }
 
 .pictures img {
-    opacity: 0.85;
+    opacity: 0.75;
+    -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: opacity 0.5s, -webkit-transform 0.5s;
     transition: transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
 }
 
 .pictures img:hover {
     opacity: 1;
+    -webkit-transform: scale(1.25);
     transform: scale(1.25)
 }
 
 /*FOOTER*/
 
 footer {
-    background-image: linear-gradient(to right, rgb(153, 217, 234) 30%, #29acff);
-    padding: 70px 20px 20px 20px;
+    background-color: #0f0f0f;
+    padding: 40px 20px 20px 20px;
 }
 
 .bottom-text p {
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     color: #eee;
     color: #9d9d9d;
 }
@@ -293,21 +308,20 @@ footer {
 
 .social-links li {
     display: inline-block;
-    margin: 30px 50px 0 0;
+    padding: 20px 20px 0 0;
 }
 
 
 .btn-center {
     text-align: right;
-    margin: 100px 0;
+    margin: 80px 0;
 }
-
-
 
 .ion-social-facebook,
 .ion-social-twitter,
 .ion-social-googleplus,
 .ion-social-instagram {
+    -webkit-transition: color 0.2s;
     transition: color 0.2s;
 }
 
